@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+    <body>
+        <h5>Helpdesk</h5>
+        <text th:utext="${message}" th:remove="tag"/>
+        <form method="post" action="/authCheck">
+            Email <input type="email" name="email" />
+            <br>
+            Password <input type="password" name="password" />
+            <br>
+            <input type="submit" value="Login" />
+        </form>
+    </body>
+</html>

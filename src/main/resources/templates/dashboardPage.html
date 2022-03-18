@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <h5>Helpdesk</h5>
+        Email: <text th:utext="${email}" th:remove="tag"/>
+        <br>
+        Firstname: <text th:utext="${firstName}" th:remove="tag"/>
+        <br>
+        Lastname: <text th:utext="${lastName}" th:remove="tag"/>
+        <br>
+        <form method="post" action="/logout">
+            <input type="submit" value="Logout">
+        </form>
+    </body>
+</html>
